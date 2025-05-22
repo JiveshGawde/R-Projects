@@ -1,0 +1,132 @@
+---
+title: "Sales Analysis Report"
+author: "Jivesh Gawde"
+date: "`2025-03-02`"
+output: html_document
+---
+
+```{r setup, include=FALSE}
+
+source("analysis_retail.R")
+
+# Set global plot options
+knitr::opts_chunk$set(
+  echo = FALSE,
+  warning = FALSE,
+  message = FALSE,
+  fig.width = 10,
+  fig.height = 6
+)
+```
+
+# **Introduction**  
+This report explores customer spending habits and sales trends across different product categories.  
+We aim to:  
+- Identify top-selling categories.  
+- Find high-value customers.  
+- Analyze price distributions.  
+- Examine sales trends over time.  
+- Understand regional and mall-wise performance.  
+
+---
+
+# **Data Summary & Overview**  
+
+```{r summary, echo=TRUE}
+summary(sales)
+```
+
+---
+
+# **Sales Quantity Distribution**  
+
+- **Minimum quantity sold:** 1  
+- **Maximum quantity sold:** 5  
+- **Most common (median) quantity:** 3  
+- **Average quantity per transaction:** ~3  
+- Customers typically buy in small quantities (1-5 items).  
+- **Highest sales volume:** **CLOTHING** (62,366 units)  
+- **Lowest sales volume:** **TECHNOLOGY** (8,989 units)  
+
+
+```{r category_wise_quantity}
+category_wise_quantity
+```
+
+---
+
+# **Revenue Distribution Across Categories**  
+
+```{r category_wise_revenue}
+category_wise_revenue
+```
+
+---
+
+# **Pricing Patterns**  
+
+- **Minimum price:** $5.23  
+- **Maximum price:** $5,250.00  
+- **Median price:** $203.30  
+- **Mean price:** $687.57  
+- The **average price is significantly higher than the median**, indicating some **high-priced outliers** are skewing the data.  
+- We will identify these high-priced outliers using a boxplot.  
+
+
+```{r product_distribution}
+product_distribution
+```
+
+---
+
+# **Sales Trend Over Time**  
+
+- **Earliest recorded sale:** January 1, 2021  
+- **Latest recorded sale:** March 8, 2023  
+- The dataset spans **26 months (just over 2 years).**  
+- We analyze monthly sales trends to check for **seasonal patterns** and overall growth.  
+
+```{r monthly_sales}
+monthly_sales
+```
+
+---
+
+# **High-Value Customers**  
+
+- We identify top-spending customers in each category.  
+- **Customers who buy Technology tend to be high-value customers** despite fewer purchases.  
+- **Clothing has the highest revenue due to higher sales volume.**  
+
+```{r value_customer}
+value_customer
+```
+
+---
+
+# **Shopping Mall & Regional Insights**  
+
+- Sales are distributed across **multiple malls and regions.**  
+- Some malls/regions might be **outperforming others.**  
+- We check **total sales by mall & region** to identify top and low-performing locations.  
+
+```{r shop_sales}
+shop_sales
+```
+
+---
+
+## **Conclusion**  
+
+- **Clothing is the highest-selling category.**  
+- **Technology has lower sales volume but high-value customers.**  
+- **Price distribution is skewed due to a few expensive products.**  
+- **Sales trends show seasonality and a recent drop (likely due to incomplete data).**  
+- **Mall & regional performance needs deeper analysis to identify the best locations.**  
+
+---
+
+### **End of Report**  
+
+---
+
