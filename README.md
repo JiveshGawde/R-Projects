@@ -1,6 +1,6 @@
 # R Projects Portfolio
 
-This repository contains a collection of R-based data science projects focused on Exploratory Data Analysis (EDA), Machine Learning, and Data Visualization using powerful libraries like `tidyverse`, `ggplot2`, `dplyr`, and `caret`. Ideal for roles involving RStudio, data cleaning, reporting, and model building.
+This repository contains a collection of R-based data science projects focused on Exploratory Data Analysis (EDA), Machine Learning, and Data Visualization using powerful libraries like `tidyverse`, `readr`, `janitor`. Ideal for roles involving RStudio, data cleaning, reporting, and model building.
 
 ## Project 1: Retail Analysis - EDA
 
@@ -50,17 +50,17 @@ Mini-projects to demonstrate mastery of core R tools for manipulation and visual
 ### Tools:
 
 * `dplyr` applied to internal sales dataset (`jatayudata`)
-* `ggplot2` used for business dashboards with SuperStore data
+* `ggplot2` used to visualize the Palmer Penguins dataset
 
 ### Files:
 
 * `dplyr - jatayudata.R`: Filtering, summarizing, and transforming sales data
-* `ggplot2 - SuperStore.R`: Interactive dashboards and charts
+* `ggplot2 - SuperStore.R`: Visualizations and analysis using the Palmer Penguins dataset
 
 ## Skills Demonstrated
 
 * Languages: R
-* Libraries: `tidyverse`, `ggplot2`, `dplyr`, `janitor`, `randomForest`, `caret`
+* Libraries: `tidyverse`, `ggplot2`, `dplyr`, `janitor`, `randomForest`, `catools`
 * Topics: Data Wrangling, Visualization, EDA, Regression, Reporting
 * Tools: RStudio, RMarkdown, Git
 
@@ -69,7 +69,7 @@ Mini-projects to demonstrate mastery of core R tools for manipulation and visual
 Make sure the required packages are installed:
 
 ```r
-install.packages(c("tidyverse", "ggplot2", "dplyr", "janitor", "randomForest", "caret"))
+install.packages(c("tidyverse", "ggplot2", "dplyr", "janitor", "randomForest", "catools", "readr", "readxl"))
 ```
 
 To view the HTML report for the retail project:
@@ -77,4 +77,3 @@ To view the HTML report for the retail project:
 ```r
 # Open sales_analysis.Rmd in RStudio and click 'Knit'
 ```
-
