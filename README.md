@@ -55,7 +55,7 @@ Mini-projects to demonstrate mastery of core R tools for manipulation and visual
 ### Files:
 
 * `dplyr - jatayudata.R`: Filtering, summarizing, and transforming sales data
-* `ggplot2 - SuperStore.R`: Visualizations and analysis using the Palmer Penguins dataset
+* `ggplot2 - palamerpenguins.R`: Visualizations and analysis using the Palmer Penguins dataset
 
 ## Skills Demonstrated
 
