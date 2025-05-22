@@ -27,11 +27,6 @@ A deep dive into retail sales data to understand sales patterns, customer behavi
 
 Predicting house prices using classic regression models to understand which features influence housing cost the most.
 
-### Techniques Used:
-
-* Linear Regression: Baseline model to understand linear relationships
-* Random Forest: Ensemble method to improve accuracy and capture non-linear effects
-
 ### Files:
 
 * `linear regression.R`: Linear model implementation
